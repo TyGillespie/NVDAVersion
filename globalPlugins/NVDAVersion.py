@@ -11,8 +11,12 @@ from scriptHandler import script
 import ui
 import versionInfo
 
-
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
-	@script(gesture = "kb:NVDA+shift+control+v")
-	def script_announceNVDAVersion(self,gesture):
+
+	@script(gesture="kb:NVDA+shift+v")
+	def script_announceNvdaVersionRegular(self, gesture):
 		ui.message(versionInfo.version)
+
+	@script(gesture="kb:NVDA+shift+control+v")
+	def script_announceNvdaVersionBrowseable(self, gesture):
+		ui.browseableMessage(versionInfo.version)
