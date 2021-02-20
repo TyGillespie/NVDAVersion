@@ -19,4 +19,4 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 
 	@script(gesture="kb:NVDA+shift+control+v")
 	def script_announceNvdaVersionBrowseable(self, gesture):
-		ui.browseableMessage(versionInfo.version)
+		ui.browseableMessage(versionInfo.version + "\r\nPress escape to exit.")
