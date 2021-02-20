@@ -1,6 +1,6 @@
 # NVDAVersion.py
 # A part of NVDAVersion.
-# Copyright (C) 2020, Ty Gillespie. All rights reserved.
+# Copyright (C) 2021, Ty Gillespie. All rights reserved.
 # GPL3 License.
 
 """Main file.
